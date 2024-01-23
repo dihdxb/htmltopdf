@@ -19,4 +19,14 @@
     'libxss1',
     'libxtst6',
     'xdg-utils'
-    ]
+  ]
+
+[phases.install]
+  npmPkgs = [
+    'body-parser@^1.20.2',
+    'express@^4.18.2',
+    'puppeteer@^21.4.1'
+  ]
+
+[phases.start]
+  cmd = "node server.js"
