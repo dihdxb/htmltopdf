@@ -16,6 +16,7 @@ app.post("/convert-html-to-pdf", async (req, res) => {
       headless: true,
       timeout: 0,
       args: ["--no-sandbox", "--disable-setuid-sandbox"],
+      ignoreDefaultArgs: ["--disable-extensions"],
       devtools: false,
     });
     const page = await browser.newPage();
