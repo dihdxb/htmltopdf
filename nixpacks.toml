@@ -30,5 +30,5 @@
   flags = "--omit=dev"
 
 [phases.start]
-  cmd = "node server.js"
+  cmd = "node server.js --omit=dev"
 
