@@ -27,6 +27,8 @@
     'express@^4.18.2',
     'puppeteer@^21.4.1'
   ]
+  flags = "--omit=dev"
 
 [phases.start]
   cmd = "node server.js"
+
